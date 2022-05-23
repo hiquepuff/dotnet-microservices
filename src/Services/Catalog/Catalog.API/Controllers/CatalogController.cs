@@ -22,15 +22,6 @@ namespace Catalog.API.Controllers
             _repository = repository;
             _logger = logger;
         }
-
-        //[HttpGet]
-        //[ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
-        //public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
-        //{
-        //    var products = await _repository.GetProducts();
-
-        //    return Ok(products);
-        //}
           
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
